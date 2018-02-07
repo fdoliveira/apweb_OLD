@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Coming Soon - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/coming-soon.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="overlay" id="localization">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15858.104547949028!2d-37.1070561!3d-6.4548168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x674c7632066cbc13!2sDistribuidora+de+Alimentos+Serid%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1459866395455" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen>
+            
+        </iframe>
+        <br>
+        <small>
+            <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15858.104547949028!2d-37.1070561!3d-6.4548168!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x674c7632066cbc13!2sDistribuidora+de+Alimentos+Serid%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1459866395455" width="100%" height="100%" frameborder="0" style="border:0"></a>
+        </small>
+    </div>
+
+    <div class="masthead">
+      <div class="masthead-bg"></div>
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 my-auto">
+            <div class="masthead-content text-white py-5 py-md-0">
+              <h1 class="mb-3" style="display: none;">Armazém Paulino</h1>
+              <img src="img/logo-armazem-paulino.png" style="width: 250px;">
+              <br><br>
+              <p class="mb-5">Produtos de alta qualidade e atendimento de excelência.
+                  Conte conosco para alavancar a suas vendas!</p>
+              
+              <div class="space-small">
+                  <h2>Entre em contato conosco!</h2>
+              </div>
+              
+              <div class="pull-left col-md-12">
+                <div class="row">
+                  <i class="fa fa-2x fa-phone" style="color: black"></i>
+                  <p style="padding-left: .5em;"> 3333-3333</p>
+                </div>
+              </div>
+
+              <div class="pull-left col-md-12">
+                <div class="row">
+                  <i class="fa fa-2x fa-envelope-o" style="color: black"></i>
+                  <a href="#"style="padding: .18em .5em">contato@armazempaulino.com.br</a>
+                </div>
+              </div>
+
+              <div class="space-small">
+                <p>De Segunda a Sexta das 7:30 as 11:30 e das 13:30 as 17:30 Aos Sábados das 7:30 as 11:30</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <ul class="list-unstyled text-center mb-0">
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/vide/jquery.vide.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/coming-soon.js"></script>
+
+    <script>
+      function initMap() {
+        var latlng = new google.maps.LatLng(-6.4693891, -37.0950524);
+
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: latlng,
+        zoom: 19
+      });
+          var marker = new google.maps.Marker({
+            position: latlng,
+            map: map
+          });
+          var infowindow = new google.maps.InfoWindow({
+        content:"<strong>Health Center Fitness | Novo conceito em academia</strong><br>Health Center Fitness, Caicó-Rn, Brasil<br>"
+      });
+
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+      });
+      }
+  </script>
+
+
+  </body>
+
+</html>
